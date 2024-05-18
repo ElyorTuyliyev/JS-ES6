@@ -70,6 +70,7 @@ body {
 
 .chess__box-top {
   i {
+    transition: 0.5s;
     text-shadow: 1px 1px 10px #fff;
   }
 }
