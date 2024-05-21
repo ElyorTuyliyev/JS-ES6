@@ -10,7 +10,7 @@ class Chess {
 }
 
 const White_A2 = new Chess("Pawn", [1, 2], "A2", 1);
-const White_B2 = new Chess("Pawn", [1, 2], "B2", 1);
+const White_B2 = new Chess("Pawn", [1, 2], "B2", 2);
 const White_C2 = new Chess("Pawn", [1, 2], "C2");
 const White_D2 = new Chess("Pawn", [1, 2], "D2");
 const White_E2 = new Chess("Pawn", [1, 2], "E2");
