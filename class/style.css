@@ -76,6 +76,9 @@ body {
 }
 
 .chess__box-bottom {
-  color: #fff;
-  text-shadow: 1px 1px 10px #000;
+  i {
+    color: #fff;
+    text-shadow: 1px 1px 10px #000;
+    transition: 0.5s;
+  }
 }
