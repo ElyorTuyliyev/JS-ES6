@@ -3,6 +3,7 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
   }, 0);
 }
+
 for (var i = 0; i < 5; i++) {
   setTimeout(
     (i) => {
@@ -12,8 +13,9 @@ for (var i = 0; i < 5; i++) {
     i
   );
 }
+
 console.log(a);
-const a = 10; // Temporal Dead Zone
+const a = 10; // Temporal Dead
 
 var a = function () {}; //Expression function
 

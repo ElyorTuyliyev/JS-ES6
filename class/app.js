@@ -20,7 +20,7 @@ const White_F2 = new Chess("Pawn", [1, 2], "F2");
 const White_G2 = new Chess("Pawn", [1, 2], "G2");
 const White_H2 = new Chess("Pawn", [1, 2], "H2");
 //--------------------------------------------------
-const White_A1 = new Chess("Rook", [1], "A1");
+const White_A1 = new Chess("Rook", [1, 2], "A1");
 const White_B1 = new Chess("Knight", [1], "B1");
 const White_C1 = new Chess("Bishop", [1], "C1");
 const White_D1 = new Chess("King", [1], "D1");
@@ -48,6 +48,14 @@ const Black_G8 = new Chess("Knight", [1], "G7");
 const Black_H8 = new Chess("Rook", [1], "H7");
 
 var obj = {
+  White_A1,
+  White_B1,
+  White_C1,
+  White_D1,
+  White_E1,
+  White_F1,
+  White_G1,
+  White_H1,
   White_A2,
   White_B2,
   White_C2,
@@ -68,6 +76,15 @@ function pawnMove(e, name) {
   }
 }
 
+function movePiece(element, name) {
+  if (obj[name]) {
+    obj[name].move();
+    element.style.transform = `translateY(-${obj[name].step * 90}px)`;
+  } else {
+    console.error(`Chess piece ${name} not found.`);
+  }
+}
+
 const objBlack = {
   Black_A7,
   Black_B7,
@@ -77,6 +94,14 @@ const objBlack = {
   Black_F7,
   Black_G7,
   Black_H7,
+  Black_A8,
+  Black_B8,
+  Black_C8,
+  Black_D8,
+  Black_E8,
+  Black_F8,
+  Black_G8,
+  Black_H8,
 };
 
 function pawnMoveBlack(e, name) {
