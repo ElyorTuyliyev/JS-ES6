@@ -1,45 +1,89 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  margin: 0;
 }
 
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Set the background color to be transparent */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
-  margin-top: 105px;
-}
-
-h1 {
-  font-size: 24px;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #007bff;
+#container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 20px 10px;
+  font-size: 20px;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #000;
 }
 
-.weather-info {
-  margin-top: 20px;
+.json__api {
+  cursor: pointer;
+  background-color: red;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+#posts {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 70px;
+}
+
+.main {
+  padding: 0 10px;
+}
+
+.posts__title {
+  width: 207px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+.posts__title:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 10px 0 rgb(196, 196, 196);
+}
+
+#comments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#albums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#todos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 50px;
+}
+
+.users__wrapper {
+  width: 330px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+.users__wrapper:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 10px 0 rgb(196, 196, 196);
 }

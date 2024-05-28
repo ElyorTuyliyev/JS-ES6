@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="container"></div>
+    <header class="header">
+      <nav class="nav">
+        <div id="container">
+          <div class="json__api" onclick="postsRun(this)">posts</div>
+          <div class="json__api" onclick="commentsRun(this)">comments</div>
+          <div class="json__api" onclick="albumsRun(this)">albums</div>
+          <div class="json__api" onclick="photosRun(this)">photos</div>
+          <div class="json__api" onclick="todosRun(this)">todos</div>
+          <div class="json__api" onclick="usersRun (this)">users</div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="posts"></div>
+      <div id="comments"></div>
+      <div id="albums"></div>
+      <div id="photos"></div>
+      <div id="todos"></div>
+      <div id="users"></div>
+    </main>
+
     <script src="app.js"></script>
   </body>
 </html>
