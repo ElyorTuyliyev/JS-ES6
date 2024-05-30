@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo list</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="todo__wrapper">
+      <h1 class="todo__title">ToDo List</h1>
+      <p class="todo__items">Add Items</p>
+      <form class="todo__input-wrapper" onsubmit="listAdd(event)">
+        <input class="todo__input" type="text" name="title" id="input__text" />
+        <input class="todo__button" type="submit" />
+      </form>
+      <p class="todo__tasks">Tasks</p>
+      <ul id="todo__list"></ul>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
