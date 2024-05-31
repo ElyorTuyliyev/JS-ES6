@@ -24,7 +24,7 @@ function render() {
       <div class="title__wrapper" data-id="${arr[i].id}">
         ${arr[i].text} 
         <div class="button__wrapper">
-          <button><i class="fa-solid fa-pen"></i> edit</button>
+          <button onclick="itemEdit(${arr[i].text})"><i class="fa-solid fa-pen"></i> edit</button>
           <button onclick="itemDelete(${arr[i].id})">delete</button>
         </div>
       </div>
@@ -39,4 +39,4 @@ function itemDelete(id) {
     render();
   }
 }
-function itemEdit(id) {}
+function itemEdit() {}
