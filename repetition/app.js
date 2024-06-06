@@ -4,16 +4,18 @@ let person = {
   city: "Tashkent",
 };
 let person1 = {
-  name: "full",
-  age: 8282,
-  city: "Jizzax",
+  job: "programmer",
+};
+let person0 = {
+  car: "BYD",
 };
 let person2 = [
   ["day", 10],
   ["week", 5],
   ["month", 7],
 ];
-console.log(Object.assign(person, person1));
+let person3 = Object.assign(person, person1, person0);
+console.log(person3, "person"); // obj larni biriktiribi
 console.log(Object.entries(person1)); // array ko'rinishda saqlaydi
 console.log(Object.fromEntries(person2)); // array ko'rinishdagi datani obj ko'rinishda olib beradi
 console.log(Object.values(person1)); //faqat xamma valuelarni oladi
