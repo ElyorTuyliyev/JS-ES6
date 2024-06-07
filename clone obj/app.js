@@ -12,5 +12,4 @@ console.log(obj);
 function formatArrayToObj(data, keys) {
   a.map();
 }
-
 formatArrayToObj(a, b);
